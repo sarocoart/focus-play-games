@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>포커스 플레이 · 눈으로 즐기는 놀이터</title>
+<meta property="og:title" content="포커스 플레이 · 눈으로 즐기는 놀이터">
+<meta property="og:description" content="화면 속 캐릭터를 눈으로 따라가는 즐거운 놀이형 게임 모음">
+<style>
+:root{
+  --bg:#F6EEDF; --panel:#FFFDF6; --ink:#40342A; --ink-soft:#8D7C67;
+  --line:#E7DBC5; --radius:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:system-ui,sans-serif; min-height:100vh;
+  display:flex; flex-direction:column; align-items:center;
+  padding:40px 20px;
+}
+h1{font-size:clamp(30px,6vw,42px); letter-spacing:-1px; text-align:center}
+.sub{color:var(--ink-soft); font-size:18px; margin-top:10px; text-align:center; line-height:1.6}
+.cards{
+  display:flex; gap:20px; flex-wrap:wrap; justify-content:center;
+  margin-top:40px; max-width:1000px;
+}
+.card{
+  background:var(--panel); border:2px solid var(--line); border-radius:var(--radius);
+  padding:34px 28px; width:280px; text-align:center; text-decoration:none; color:var(--ink);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{transform:translateY(-6px); box-shadow:0 12px 28px rgba(94,78,55,.15)}
+.card .icon{font-size:64px; line-height:1}
+.card h2{font-size:22px; margin:16px 0 8px}
+.card p{color:var(--ink-soft); font-size:15px; line-height:1.5}
+.card .go{
+  display:inline-block; margin-top:18px; padding:12px 28px; border-radius:16px;
+  color:#fff; font-weight:700; font-size:16px;
+}
+.card .go{background:var(--c)}
+.section{margin-top:44px;font-size:20px;font-weight:800;color:var(--ink)}
+footer{
+  margin-top:auto; padding-top:40px; color:var(--ink-soft);
+  font-size:13px; text-align:center; line-height:1.7; max-width:640px;
+}
+</style>
+</head>
+<body>
+  <h1>👀 포커스 플레이</h1>
+  <p class="sub">화면 속 캐릭터를 <b>눈으로만</b> 따라가는 놀이터입니다.<br>마음에 드는 게임을 골라 시작하세요!</p>
+
+  <p class="section">🎮 기본 시리즈</p>
+  <div class="cards">
+    <a class="card" href="baby.html" style="--c:#5E7D4F">
+      <div class="icon">👶🍓</div><h2>아기의 과일 모험</h2>
+      <p>아장아장 걸어가는 아기가<br>과일을 팡팡 터뜨려요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="puppy.html" style="--c:#8A6D4B">
+      <div class="icon">🐶🦴</div><h2>강아지의 간식 산책</h2>
+      <p>신나게 달리는 강아지가<br>간식을 찾아다녀요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="space.html" style="--c:#5A6B9E">
+      <div class="icon">🚀⭐</div><h2>로켓의 별 여행</h2>
+      <p>우주를 가로지르는 로켓이<br>별을 모아요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="random.html" style="--c:#E39A3B">
+      <div class="icon">👶🧸</div><h2>아장아장 아기 따라가기</h2>
+      <p>사선으로! 위로! 옆으로!<br>아기가 마음대로 돌아다녀요</p><span class="go">시작하기</span>
+    </a>
+  </div>
+
+  <p class="section">🕰️ 추억 시리즈 — 그때 그 시절</p>
+  <div class="cards">
+    <a class="card" href="chicken.html" style="--c:#6B7D4F">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="height:86px;vertical-align:middle">
+<circle cx="60" cy="64" r="40" fill="#FFFFFF" stroke="#E8D9BC" stroke-width="3"/>
+<circle cx="46" cy="24" r="9" fill="#FF5252"/><circle cx="60" cy="19" r="10" fill="#FF5252"/><circle cx="74" cy="24" r="9" fill="#FF5252"/>
+<circle cx="44" cy="58" r="11" fill="#FFFFFF" stroke="#D8C9A8" stroke-width="1.5"/><circle cx="46" cy="60" r="4" fill="#33261A"/><circle cx="47.5" cy="58.5" r="1.4" fill="#FFFFFF"/>
+<circle cx="76" cy="58" r="11" fill="#FFFFFF" stroke="#D8C9A8" stroke-width="1.5"/><circle cx="78" cy="60" r="4" fill="#33261A"/><circle cx="79.5" cy="58.5" r="1.4" fill="#FFFFFF"/>
+<path d="M52 78 q8 -6 16 0 q-8 12 -16 0 z" fill="#FF9F1C"/>
+<path d="M56 80 q4 5 8 0 z" fill="#D96A00"/>
+<circle cx="28" cy="74" r="6" fill="#FFB3B3"/><circle cx="92" cy="74" r="6" fill="#FFB3B3"/>
+<path d="M100 30 q7 9 0 15 q-8 -6 0 -15" fill="#3D9BE9"/>
+<ellipse cx="60" cy="103" rx="7" ry="8" fill="#FF6B6B"/>
+</svg><span style="font-size:52px;vertical-align:middle"> 🌾</span></div><h2>마당의 닭 쫓기</h2>
+      <p>어릴 적 시골 마당,<br>푸드덕 도망가는 닭을 쫓아요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="sparrow.html" style="--c:#7A8450">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="height:86px;vertical-align:middle">
+<ellipse cx="16" cy="74" rx="11" ry="15" fill="#8A4E1C"/>
+<circle cx="58" cy="64" r="38" fill="#B06A2A"/>
+<ellipse cx="58" cy="42" rx="30" ry="17" fill="#8A4E1C"/>
+<circle cx="58" cy="80" r="22" fill="#FFF3DC"/>
+<path d="M42 54 q5 -6 10 0 M66 54 q5 -6 10 0" stroke="#2E1D10" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="38" cy="70" r="9" fill="#C97C3C"/><circle cx="78" cy="70" r="9" fill="#C97C3C"/>
+<circle cx="40" cy="64" r="5" fill="#FF9E9E"/><circle cx="76" cy="64" r="5" fill="#FF9E9E"/>
+<path d="M52 64 l6 9 6 -9 z" fill="#FF9F1C"/>
+<path d="M60 70 q22 0 36 -18" stroke="#E3B505" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="92" cy="56" rx="4.5" ry="3" fill="#FFD23F" stroke="#E3A600" stroke-width="1.2" transform="rotate(-28 92 56)"/>
+<ellipse cx="98" cy="49" rx="4.5" ry="3" fill="#FFD23F" stroke="#E3A600" stroke-width="1.2" transform="rotate(-34 98 49)"/>
+<ellipse cx="102" cy="42" rx="4" ry="2.8" fill="#FFD23F" stroke="#E3A600" stroke-width="1.2" transform="rotate(-40 102 42)"/>
+</svg><span style="font-size:52px;vertical-align:middle"> 🌾</span></div><h2>참새와 방앗간</h2>
+      <p>참새가 방앗간을<br>그냥 지나가나요?</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="bus.html" style="--c:#55707D">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="height:86px;vertical-align:middle">
+<rect x="10" y="38" width="100" height="50" rx="14" fill="#FFC93C"/>
+<rect x="12" y="70" width="96" height="8" fill="#FF6B4A"/>
+<rect x="34" y="24" width="52" height="16" rx="8" fill="#FFFFFF" stroke="#E8A93C" stroke-width="2"/>
+<text x="60" y="36" font-size="10" font-weight="bold" text-anchor="middle" fill="#B0702A" font-family="sans-serif">시골길</text>
+<rect x="18" y="46" width="20" height="18" rx="6" fill="#6EC6F0"/>
+<rect x="82" y="46" width="20" height="18" rx="6" fill="#6EC6F0"/>
+<rect x="44" y="44" width="32" height="22" rx="8" fill="#8FD4F5"/>
+<circle cx="60" cy="56" r="10" fill="#FFD9A0"/>
+<path d="M50 55 a10 9 0 0 1 20 0 l-2 4 -2.5 -4 h-11 l-2.5 4 z" fill="#4A3226"/>
+<circle cx="56" cy="57" r="2" fill="#33261A"/>
+<path d="M62.5 56.5 q2.5 2.2 5 0" stroke="#33261A" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M57 61 q3 3.5 6 0 z" fill="#E2574C"/>
+<path d="M55 65 h10 l-3 5 h-4 z" fill="#FF5A5A"/>
+<ellipse cx="34" cy="44" rx="18" ry="4" fill="#FFFFFF" opacity="0.4"/>
+<circle cx="18" cy="82" r="5" fill="#FFF3B0" stroke="#E8A93C" stroke-width="2"/>
+<circle cx="102" cy="82" r="5" fill="#FFF3B0" stroke="#E8A93C" stroke-width="2"/>
+<circle cx="34" cy="92" r="11" fill="#3A3A3A"/><circle cx="34" cy="92" r="5" fill="#CFCFCF"/>
+<circle cx="86" cy="92" r="11" fill="#3A3A3A"/><circle cx="86" cy="92" r="5" fill="#CFCFCF"/>
+</svg><span style="font-size:52px;vertical-align:middle"> 🧺</span></div><h2>추억의 완행버스</h2>
+      <p>덜컹덜컹 시골길<br>오라이~ 출발합니다</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="stream.html" style="--c:#4F7D6B">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="height:86px;vertical-align:middle">
+<circle cx="60" cy="66" r="36" fill="#FFD9A0"/>
+<path d="M26 54 a34 26 0 0 1 68 0 z" fill="#2E9E5B"/>
+<rect x="26" y="46" width="68" height="8" fill="#1F7A43"/>
+<ellipse cx="60" cy="56" rx="44" ry="9" fill="#27874E"/>
+<path d="M44 68 q5 -6 10 0 M66 68 q5 -6 10 0" stroke="#33261A" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="36" cy="78" r="6" fill="#FF9E9E"/><circle cx="84" cy="78" r="6" fill="#FF9E9E"/>
+<path d="M44 80 q16 18 32 0 z" fill="#7A3B2E"/>
+<path d="M53 88 q7 6 14 0 z" fill="#FF7B7B"/>
+<circle cx="14" cy="44" r="4" fill="#4FB3F6"/><circle cx="106" cy="38" r="3" fill="#4FB3F6"/>
+</svg><span style="font-size:52px;vertical-align:middle"> 🪱</span></div><h2>개울가 붕어 잡기</h2>
+      <p>바짓단 걷고 첨벙첨벙<br>월척을 노려보세요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="disco.html" style="--c:#7D5E7B">
+      <div class="icon">🕺🪩</div><h2>추억의 고고장</h2>
+      <p>7080 토요일 밤<br>무대 위 춤꾼을 따라가요</p><span class="go">시작하기</span>
+    </a>
+    <a class="card" href="yeot.html" style="--c:#8A5A3B">
+      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="height:86px;vertical-align:middle">
+<circle cx="58" cy="64" r="36" fill="#FFD9A0"/>
+<path d="M24 54 a34 24 0 0 1 68 0 z" fill="#3E5C9E"/>
+<rect x="20" y="50" width="76" height="9" rx="4.5" fill="#2C4577"/>
+<circle cx="58" cy="30" r="4" fill="#2C4577"/>
+<path d="M42 66 q5 -6 10 0 M64 66 q5 -6 10 0" stroke="#33261A" stroke-width="4" fill="none" stroke-linecap="round"/>
+<circle cx="36" cy="76" r="6" fill="#FF9E9E"/><circle cx="80" cy="76" r="6" fill="#FF9E9E"/>
+<circle cx="58" cy="82" r="5.5" fill="#E2574C"/><circle cx="58" cy="82" r="2.4" fill="#8A2F26"/>
+<text x="94" y="42" font-size="17" font-weight="bold" fill="#7B4FD8" font-family="sans-serif">♪</text>
+<text x="103" y="26" font-size="13" fill="#9A7BE0" font-family="sans-serif">♫</text>
+<g transform="rotate(18 18 84)">
+<ellipse cx="15" cy="76" rx="3.4" ry="10" fill="#4FB3F6" transform="rotate(-16 15 76)"/>
+<ellipse cx="22" cy="76" rx="3.4" ry="10" fill="#2F7FC4" transform="rotate(16 22 76)"/>
+<circle cx="18.5" cy="85" r="2.4" fill="#1F5E92"/>
+<circle cx="15" cy="92" r="4.2" fill="none" stroke="#1F5E92" stroke-width="3"/>
+<circle cx="23" cy="92" r="4.2" fill="none" stroke="#1F5E92" stroke-width="3"/>
+</g>
+</svg><span style="font-size:52px;vertical-align:middle"> 👟</span></div><h2>엿장수 마음대로</h2>
+      <p>찰칵찰칵 가위 소리~<br>고무신 주고 엿 바꿔요</p><span class="go">시작하기</span>
+    </a>
+  </div>
+
+  <footer>
+    본 게임은 의료기기가 아니며, 질병의 진단·치료·예방을 목적으로 하지 않는 오락용 콘텐츠입니다.
+    화면 속 움직임을 따라보며 좌우·위아래로 눈을 움직이는 활동을 돕는 놀이형 콘텐츠입니다.
+  </footer>
+</body>
+</html>
